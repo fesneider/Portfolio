@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 ## Meu primeiro portfolio
 
 Entrando no mundo de desenvolvimento web, primeira atividade prática com frontend e backend
