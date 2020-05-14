@@ -1,0 +1,165 @@
+
+/* * - Serve para uma configuração geral*/
+/* soft reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background-color: #ffc300;
+    font-family:'Candal', sans-serif;
+    height: 100vh;
+}
+
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+/* @media - Ajuste para deixar o site responsivo*/
+@media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
+}
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 26px;
+  }
+}
+   header {
+    height: 100vh;
+    display: flex;
+   /* align-items: center;*/
+    justify-content: center;
+   /* flex-wrap: wrap;*/
+  }
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color:white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(100, 000, 255);
+}
+
+
+.gallery .item {
+   /* height: 100vh;*/
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  
+.item {
+    /*height: 100vh;*/
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+  }
+
+.item h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 30vh ;
+}
+  
+.item h2 {
+    color: white;
+    /*font-style: italic;*/
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 3vh;
+}
+
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+.portfolio {
+  padding: 2em;
+  height: 100vh;
+}
+
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+
+
+ 
